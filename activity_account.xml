@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/account"
+    android:orientation="vertical"
+    tools:context="com.apkglobal.tiffin7.AccountActivity">
+
+
+    <LinearLayout
+        android:id="@+id/linearLayoutDetails"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="60dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/account" />
+
+        <TextView
+            android:id="@+id/accountdetails"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="20dp"
+            android:text="ACCOUNT DETAILS"
+            android:textAlignment="center"
+            android:textSize="30dp" />
+
+
+    </LinearLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="10dp">
+
+
+        <LinearLayout
+            android:id="@+id/linearLayoutName"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/ivname"
+                android:layout_width="20dp"
+                android:layout_height="match_parent"
+                android:src="@drawable/name" />
+
+            <TextView
+                android:id="@+id/tvname"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Your Name" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/linearLayoutPhone"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_below="@+id/linearLayoutName"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/ivphone"
+                android:layout_width="20dp"
+                android:layout_height="match_parent"
+                android:src="@drawable/phone" />
+
+            <TextView
+                android:id="@+id/tvphone"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Phone number" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearLayoutId"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_below="@+id/linearLayoutPhone"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/ivid"
+                android:layout_width="20dp"
+                android:layout_height="match_parent"
+                android:src="@drawable/id" />
+
+            <TextView
+                android:id="@+id/tvid"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Email Id" />
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+</LinearLayout>

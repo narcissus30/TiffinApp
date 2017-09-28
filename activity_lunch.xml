@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.apkglobal.tiffin7.LunchActivity"
+    android:background="@drawable/blur">
+
+
+    <ImageView
+        android:layout_width="368dp"
+        android:layout_height="150dp"
+        android:src="@drawable/lunch"
+        android:id="@+id/imageviewlunch"
+        android:layout_weight="0.37"
+        tools:layout_editor_absoluteY="0dp"
+        tools:layout_editor_absoluteX="8dp" />
+
+
+    <Button
+        android:id="@+id/btnlunch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Get Lunch Details"
+        tools:layout_editor_absoluteX="113dp"
+        tools:layout_editor_absoluteY="314dp"
+        android:layout_below="@+id/imageviewlunch"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="125dp" />
+
+</RelativeLayout>
